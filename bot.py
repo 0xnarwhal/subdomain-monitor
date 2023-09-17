@@ -4,11 +4,7 @@ import json
 import requests
 import os
 
-# If results save location doesn't exist, make one.
-if os.path.isdir('results'):
-    pass
-else:
-    os.mkdir('results')
+
 
 # Load settings.
 with open("./config.json") as f:
@@ -21,6 +17,12 @@ domains = configData["DOMAIN_LIST"]
 api_token = configData["API_KEY"]
 save_location = configData["SAVE_LOCATION"]
 apireq = f"https://subdomains.whoisxmlapi.com/api/v1?apiKey={api_token}&domainName="
+
+# If results save location doesn't exist, make one.
+if os.path.isdir('results'):
+    pass
+else:
+    os.mkdir('results')
 
 # Create bot instance
 bot = commands.Bot(command_prefix=prefix, intents=discord.Intents.all())
