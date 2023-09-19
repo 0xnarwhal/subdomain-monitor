@@ -2,3 +2,4 @@
 .virenv
 config.json
 results
+logs.txt
