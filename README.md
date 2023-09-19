@@ -63,7 +63,8 @@ python3 bot.py
 
 ## Future QOL Improvements
 
-- Utilize embedded messages for better formatting instead of individual messages.
+- Utilize embedded messages for better formatting instead of individual messages. - Done
+- Logs functionality created. - Done
 - Add more functionality to the bot.
 - Add more error handling.
 
